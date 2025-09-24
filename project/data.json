@@ -1,0 +1,44 @@
+{
+  "bosses": [
+    {
+      "id": "crystalguardian",
+      "title": "Crystal Guardian",
+      "description": "A crystalline creature guarding the Crystal Peak.",
+      "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW5nM3d2eXJrY2E4cHlyZGx0d2Z4YzR2a3c1c2p0ZXBkb2tydzF5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LqDqS8zL4lXjC3H0O/giphy.gif",
+      "location": "Crystal Peak",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "mantislords",
+      "title": "Mantis Lords",
+      "description": "Swift and honorable warriors of the Mantis Tribe.",
+      "image": "https://flipanim.com/gif/x/4/X4Khfx0b.gif",
+      "location": "Mantis Village",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "hollowknight",
+      "title": "Hollow Knight",
+      "description": "The titular knight of the fallen kingdom.",
+      "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGxoa3A3a3RtdmJ6cmJ4M2M5eGRwd2Y2d3I1a3J1c2NsYmx5eW1vZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7bu3XilJ5BOiSGic/giphy.gif",
+      "location": "Temple of the Black Egg",
+      "difficulty": "Very Hard"
+    },
+    {
+      "id": "falseknight",
+      "title": "False Knight",
+      "description": "A bulky maggot wielding a stolen mace.",
+      "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGxha3A3a3RtdmJ6cmJ4M2M5eGRwd2Y2d3I1a3J1c2NsYmx5eW1vZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7bu3XilJ5BOiSGic/giphy.gif",
+      "location": "Forgotten Crossroads",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "soulmaster",
+      "title": "Soul Master",
+      "description": "A sorcerer wielding soul magic.",
+      "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW5nM3d2eXJrY2E4cHlyZGx0d2Z4YzR2a3c1c2p0ZXBkb2tydzF5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LqDqS8zL4lXjC3H0O/giphy.gif",
+      "location": "Soul Sanctum",
+      "difficulty": "Hard"
+    }
+  ]
+}

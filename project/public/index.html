@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boss List</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Boss List</h1>
+    <ul id="boss-list" class="grid">
+      <!-- List items populated by JavaScript -->
+    </ul>
+  </main>
+  <script>
+    const bosses = [
+      { id: 'crystalguardian', title: 'Crystal Guardian', description: 'A crystalline creature.', image: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW5nM3d2eXJrY2E4cHlyZGx0d2Z4YzR2a3c1c2p0ZXBkb2tydzF5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LqDqS8zL4lXjC3H0O/giphy.gif' },
+      { id: 'mantislords', title: 'Mantis Lords', description: 'Swift warriors.', image: 'https://flipanim.com/gif/x/4/X4Khfx0b.gif' },
+      { id: 'hollowknight', title: 'Hollow Knight', description: 'The titular knight.', image: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGxoa3A3a3RtdmJ6cmJ4M2M5eGRwd2Y2d3I1a3J1c2NsYmx5eW1vZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7bu3XilJ5BOiSGic/giphy.gif' },
+      { id: 'falseknight', title: 'False Knight', description: 'A bulky maggot.', image: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGxoa3A3a3RtdmJ6cmJ4M2M5eGRwd2Y2d3I1a3J1c2NsYmx5eW1vZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7bu3XilJ5BOiSGic/giphy.gif' },
+      { id: 'soulmaster', title: 'Soul Master', description: 'A soul sorcerer.', image: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW5nM3d2eXJrY2E4cHlyZGx0d2Z4YzR2a3c1c2p0ZXBkb2tydzF5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LqDqS8zL4lXjC3H0O/giphy.gif' }
+    ];
+
+    const bossList = document.getElementById('boss-list');
+    bosses.forEach(boss => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <article>
+          <h3>${boss.title}</h3>
+          <img src="${boss.image}" alt="${boss.title}" style="max-width: 150px; height: auto;">
+          <p>${boss.description}</p>
+          <a href="/bosses/${boss.id}" class="btn">View Details</a>
+        </article>
+      `;
+      bossList.appendChild(li);
+    });
+  </script>
+</body>
+</html>
